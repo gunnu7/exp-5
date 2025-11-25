@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Educational Blog</title>
+    <style>
+        body {
+            font-family: Arial;
+            margin: 20px;
+            background: #f0f7ff; /* light blue background */
+        }
+
+        h1 {
+            text-align: center;
+            color: #003c8f; /* dark blue */
+        }
+
+        .sidebar, .post, .comment-box {
+            background: white;
+            border: 1px solid #bcd3ff;
+            padding: 15px;
+            margin-bottom: 20px;
+            border-radius: 8px;
+        }
+
+        .sidebar {
+            background: #e8f1ff; /* light sidebar blue */
+        }
+
+        .tag {
+            background: #d9ecff;
+            color: #004c99;
+            padding: 3px 6px;
+            margin-right: 5px;
+            font-size: 12px;
+            border-radius: 4px;
+        }
+
+        .category {
+            font-size: 14px;
+            color: green;
+            font-weight: bold;
+        }
+
+        .comment {
+            border-bottom: 1px solid #ddd;
+            padding-bottom: 10px;
+            margin-bottom: 10px;
+        }
+
+        .comment textarea, .comment input {
+            width: 100%;
+            margin: 5px 0;
+            padding: 8px;
+            border-radius: 4px;
+            border: 1px solid #bcd3ff;
+        }
+
+        button {
+            background: #004c99;
+            color: white;
+            padding: 8px 12px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background: #003c7a;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>My Educational Blog</h1>
+    <p style="text-align:center; color:#0052a5;">Learn Technology, Health & Finance in simple words.</p>
+
+    <!-- Sidebar -->
+    <div class="sidebar">
+        <h3>Categories</h3>
+        <ul>
+            <li>Technology</li>
+            <li>Health</li>
+            <li>Finance</li>
+        </ul>
+
+        <h3>Tags</h3>
+        <span class="tag">AI</span>
+        <span class="tag">Wellness</span>
+        <span class="tag">Budgeting</span>
+        <span class="tag">Tips</span>
+    </div>
+
+    <!-- Blog Post -->
+    <div class="post">
+        <h2 style="color:#003c8f;">Introduction to Artificial Intelligence</h2>
+        <p class="category">Category: Technology</p>
+
+        <p>
+            Artificial Intelligence (AI) is transforming industries worldwide.
+            This post introduces basic AI concepts for beginners.
+        </p>
+
+        <p>
+            Tags:
+            <span class="tag">AI</span>
+            <span class="tag">Technology</span>
+            <span class="tag">Beginner</span>
+        </p>
+    </div>
+
+    <!-- Comments -->
+    <div class="comment-box">
+        <h3 style="color:#003c8f;">Comments</h3>
+
+        <div class="comment">
+            <strong>Rita</strong>
+            <p>Great explanation! Very easy to understand.</p>
+        </div>
+
+        <!-- Add Comment -->
+        <h4 style="color:#003c8f;">Leave a Comment</h4>
+        <input type="text" placeholder="Your Name">
+        <textarea rows="4" placeholder="Write your comment..."></textarea>
+        <button>Post Comment</button>
+    </div>
+
+</body>
+</html>
